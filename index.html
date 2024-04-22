@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather app</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <H1
+    style="text-align:center ; color: white ; font-size: 50px ; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; font-weight: bolder ; margin-top: 50px ; margin-bottom: 50px ; ">
+    Weather App</H1>
+  <div class="card">
+
+    <div class="search">
+      <input type="text" placeholder="Enter city name" spellcheck="false">
+      <button><img src="search.png" alt=""></button>
+    </div>
+    <!-- <div class="error">
+      <p>Invalid city name</p>
+    </div> -->
+
+    <div class="weather">
+
+      <img src="rain.png" class="weather-icon">
+      <h1 class="temp">22°c</h1>
+      <h1 class="city">New York</h1>
+
+      <div class="details">
+        <div class="col">
+          <img src="humidity.png">
+          <div>
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="wind.png">
+          <div>
+            <p class="wind">15km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  //   if (typeof navigator.serviceWorker !== 'undefined') {
+  //     navigator.serviceWorker.register('sw.js')
+  //   }
+</script>
+<script src="app.js"></script>
+
+</html>
